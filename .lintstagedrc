@@ -1,0 +1,7 @@
+{
+  "{README,CONTRIBUTING}.md": ["npm run format-doctoc", "git add"],
+  "package.json": ["npm run format-package-json", "git add"],
+  "{.editorconfig, LICENSE}": ["prettier --write", "git add"],
+  "**/*.md": ["markdownlint"],
+  "**/*.{json,md,mdx,yaml,yml}": ["prettier --write", "git add"]
+}

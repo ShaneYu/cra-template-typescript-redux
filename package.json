@@ -1,0 +1,54 @@
+{
+  "name": "@shaneyu/cra-template-typescript-redux",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Shane Yu",
+    "url": "https://github.com/ShaneYu"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "homepage": "https://github.com/ShaneYu/cra-template-typescript-redux",
+  "description": "An opinionated create-react-app template for React with TypeScript, Redux and full linting based on AirBnb.",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "prettier",
+    "eslint",
+    "redux",
+    "linting"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShaneYu/cra-template-typescript-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShaneYu/cra-template-typescript-redux/issues"
+  },
+  "scripts": {
+    "commit": "npx git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "commitizen": "4.1.2",
+    "cz-conventional-changelog": "3.2.0",
+    "husky": "^4.2.5",
+    "semantic-release": "17.0.8"
+  }
+}
